@@ -1,9 +1,8 @@
 package com.company;
-
 public class CeilingNumber {
     public static void main(String[] args) {
         int[] arr = {2, 3, 5, 9, 14, 16, 18};
-        int target = 8;
+        int target = 3;
         int result = Ceiling(arr , target);
         System.out.println(result);
     }

@@ -3,7 +3,7 @@ package com.company;
 public class BSinAscending {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 7, 8};
-        int target = 1;
+        int target = 5;
         int result = BinarySearch(arr,target);
         System.out.println(result);
     }
@@ -20,6 +20,6 @@ public class BSinAscending {
                 return mid;
             }
         }
-        return end;
+        return -1;
     }
 }

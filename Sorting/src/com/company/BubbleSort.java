@@ -9,6 +9,9 @@ public class BubbleSort {
         bubble(arr);
         System.out.println(Arrays.toString(arr));
     }
+    static void selectionSort(int[] arr){
+        
+    }
     static void bubble(int[] arr){
         for (int i = 0; i < arr.length - 1; i++) {
             boolean swapped = false;

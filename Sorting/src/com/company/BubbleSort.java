@@ -5,15 +5,15 @@ import java.util.Arrays;
 public class BubbleSort {
     public static void main(String[] args) {
 	// write your code here
-        int[] arr = {5, 4, 3, 2, 1};
+        int[] arr = {99, 1, -1, 0, 881, -102, -1122};
         selectionSort(arr);
         System.out.println(Arrays.toString(arr));
     }
     static void selectionSort(int[] arr){
-        int flag = arr.length-1;
         for (int i = 0; i < arr.length; i++) {
-                swap(arr, findMax(arr, 0, flag-1 ), flag);
-                flag--;
+            int last = arr.length - 1 - i;
+            int MaxIndex = findMax(arr, 0, last);
+            swap(arr, MaxIndex, last);
         }
     }
     static int findMax(int[] arr, int start, int end){

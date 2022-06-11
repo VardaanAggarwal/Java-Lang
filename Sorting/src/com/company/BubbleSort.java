@@ -10,7 +10,27 @@ public class BubbleSort {
         System.out.println(Arrays.toString(arr));
     }
     static void selectionSort(int[] arr){
-        
+        int flag = arr.length-1;
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length-1-i; j++) {
+
+            }
+        }
+    }
+    static int findMax(int[] arr, int start, int end){
+        int max = Integer.MIN_VALUE;
+        int i;
+        for (i = start; i < end; i++) {
+            if(max < arr[i]){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    static void swap(int[] arr, int first, int second){
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
     }
     static void bubble(int[] arr){
         for (int i = 0; i < arr.length - 1; i++) {

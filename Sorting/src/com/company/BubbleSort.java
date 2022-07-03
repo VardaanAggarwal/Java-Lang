@@ -17,7 +17,7 @@ public class BubbleSort {
         }
     }
     static int findMax(int[] arr, int start, int end){
-        int max = 0;
+        int max = start;
         int i;
         for (i = start; i <= end; i++) {
             if(arr[max] < arr[i]){
